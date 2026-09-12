@@ -1,0 +1,9 @@
+name = "meridix-suggest"
+main = "src/index.js"
+compatibility_date = "2026-09-12"
+
+# Since thejmstudios.com is on this Cloudflare account, this binds the
+# Worker directly to the subdomain and auto-provisions DNS + SSL for it.
+[[routes]]
+pattern = "q.meridix.thejmstudios.com"
+custom_domain = true
